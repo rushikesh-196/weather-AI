@@ -1,0 +1,281 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+/* HEADER */
+header{
+  background:#ffffff;
+  padding:15px 40px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  color:#1e88e5;
+}
+
+.search input{
+  width:420px;
+  padding:12px 18px;
+  border-radius:30px;
+  border:1px solid #ccc;
+}
+
+/* NAV */
+.nav-right{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+.nav-btn{
+  background:transparent;
+  border:none;
+  font-size:14px;
+  cursor:pointer;
+  padding:6px 10px;
+  color:#222;
+  border-radius:6px;
+  transition:0.3s;
+}
+
+.nav-btn:hover{
+  background:#e8f4ff;
+  color:#0077ff;
+}
+
+.nav-btn.active{
+  background:#0077ff;
+  color:#fff;
+}
+
+.nav-btn.lang{
+  border:1px solid #ddd;
+  padding:6px 14px;
+}
+
+/* HERO */
+.hero{
+  height:420px;
+  background:linear-gradient(#dff1ff,#ffffff);
+  text-align:center;
+  padding-top:60px;
+}
+
+.hero h1{ font-size:42px; }
+
+.hero span{
+  color:#666;
+}
+
+.temperature{
+  font-size:80px;
+  font-weight:bold;
+  margin:20px 0;
+}
+
+/* HOURLY */
+.hourly{
+  padding:40px;
+}
+
+.hour-cards{
+  display:flex;
+  gap:18px;
+  overflow-x:auto;
+}
+
+.card{
+  min-width:150px;
+  background:#ffffff;
+  border-radius:14px;
+  text-align:center;
+  padding:18px;
+  box-shadow:0 8px 18px rgba(0,0,0,0.08);
+}
+
+.card img{
+  width:50px;
+}
+
+/* ===== LOCATION SECTION ===== */
+h2 {
+  text-align: center;
+  margin: 60px 0 20px;
+  font-size: 28px;
+}
+
+.map-container {
+  max-width: 900px;
+  height: 350px;
+  margin: 0 auto 80px;   /* center + gap from footer */
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border: 1px solid #ddd;
+}
+
+
+/* ===== FOOTER ===== */
+footer {
+  background: #111;
+  color: #fff;
+  padding: 50px 10% 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.footer-grid h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-grid a {
+  display: block;
+  color: #bbb;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: color 0.3s;
+}
+
+.footer-grid a:hover {
+  color: #fff;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #aaa;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+}
+
+
+.search{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  margin:30px 0;
+}
+
+.search input{
+  padding:12px 14px;
+  width:260px;
+  border-radius:8px;
+  border:1px solid #ccc;
+  outline:none;
+}
+
+.search button{
+  padding:12px 20px;
+  border:none;
+  border-radius:8px;
+  background:#660950;
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.search button:hover{
+  background:#b36068;
+}
+
+
+/* ===== EXTRA WEATHER FEATURES ===== */
+.extra-weather {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #fff;
+  backdrop-filter: blur(5px);
+}
+
+.extra-weather p {
+  margin: 0;
+  text-align: center;
+  flex: 1;
+}
+
+/* Optional: add a border between items */
+.extra-weather p:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+ /* ===== HERO SECTION ===== */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: #e6f0fa; /* light blue background */
+  color: #000;
+  font-family: 'Arial', sans-serif;
+}
+
+/* City Name */
+.hero #place {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Region Name */
+.hero #region {
+  display: block;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Temperature */
+.hero .temperature {
+  font-size: 64px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Condition */
+.hero .condition {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Time */
+.hero .time {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Extra Weather Info */
+.extra-weather {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* space between items */
+  font-size: 16px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* responsive wrap for small screens */
+}
+
+/* Individual Weather Item */
+.weather-item {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 10px;
+  min-width: 120px;
+}
